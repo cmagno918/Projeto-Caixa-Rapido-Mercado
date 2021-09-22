@@ -50,7 +50,7 @@ namespace Mercado2
                 dinheiro2 = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                 v2 = valorTotal1 + valorTotal2;
                 troco2 = dinheiro2 - v2;
-                Console.WriteLine("O seu produto é: " + nomeProduto1  + nomeProduto2 + " A quantidade foi: " + (quantidade1 + quantidade2) + " O preco do produto foi R$ "  + precoProduto2.ToString("F1", CultureInfo.InvariantCulture) + "O valor total é R$ " + v2.ToString("F2", CultureInfo.InvariantCulture));
+                Console.WriteLine("Os seus produtos são: " + nomeProduto1 + (", ") + nomeProduto2 + " A quantidade foi: " + (quantidade1 + quantidade2) + " O preco do produto foi R$ "  + precoProduto2.ToString("F1", CultureInfo.InvariantCulture) + "O valor total é R$ " + v2.ToString("F2", CultureInfo.InvariantCulture));
                 Console.WriteLine("Confira o seu troco R$ " + troco2.ToString("F2", CultureInfo.InvariantCulture));
                 Console.ReadLine();
             }
@@ -71,7 +71,7 @@ namespace Mercado2
                 dinheiro3 = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                 v3 = valorTotal1 + valorTotal2 + valorTotal3;
                 troco3 = dinheiro3 -  (valorTotal1 + valorTotal2 + valorTotal3);
-                Console.WriteLine("O seu produto é: " + nomeProduto1 + nomeProduto2 + nomeProduto3 + " A quantidade foi: " + (quantidade1 + quantidade2 + quantidade3) + " O preco total foi: "  + precoProduto3.ToString("F1", CultureInfo.InvariantCulture) + "O valor total é: " + v3.ToString("F2", CultureInfo.InvariantCulture));
+                Console.WriteLine("Os seus produtos são: " + nomeProduto1 + (", ") +  nomeProduto2 + (", ")+  nomeProduto3 + " A quantidade foi: " + (quantidade1 + quantidade2 + quantidade3) + " O preco total foi: "  + precoProduto3.ToString("F1", CultureInfo.InvariantCulture) + "O valor total é: " + v3.ToString("F2", CultureInfo.InvariantCulture));
                 Console.WriteLine("Confira o seu troco R$ " + troco3.ToString("F2", CultureInfo.InvariantCulture));
                 Console.ReadLine();
             }
@@ -92,7 +92,7 @@ namespace Mercado2
                 dinheiro4 = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                 v4 = valorTotal1 + valorTotal2 + valorTotal3 + valorTotal4;
                 troco4 = dinheiro4 - v4;
-                Console.WriteLine("O seu produto é: " + nomeProduto1 + nomeProduto2 + nomeProduto3 + nomeProduto4 + " A quantidade foi: " + (quantidade1 + quantidade2 + quantidade3 + quantidade4) + " O preco do produto foi: " + precoProduto4.ToString("F1", CultureInfo.InvariantCulture) + "O valor total é R$ " + v4.ToString("F2", CultureInfo.InvariantCulture));
+                Console.WriteLine("Os seus produtos são: " + nomeProduto1 + (", ") + nomeProduto2 + (", ") + nomeProduto3 + (", ") + nomeProduto4 + " A quantidade foi: " + (quantidade1 + quantidade2 + quantidade3 + quantidade4) + " O preco do produto foi: " + precoProduto4.ToString("F1", CultureInfo.InvariantCulture) + "O valor total é R$ " + v4.ToString("F2", CultureInfo.InvariantCulture));
                 Console.WriteLine("Confira o seu troco R$ " + troco4.ToString("F2", CultureInfo.InvariantCulture));
                 Console.ReadLine();
             }
@@ -113,7 +113,7 @@ namespace Mercado2
                 dinheiro5 = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                 v5 = valorTotal1 + valorTotal2 + valorTotal3 + valorTotal4 + valorTotal5;
                 troco5 = dinheiro5 - v5;
-                Console.WriteLine("O seu produto é: "  + nomeProduto1 + nomeProduto2 + nomeProduto3 + nomeProduto4 + nomeProduto5 + " A quantidade foi: " + (quantidade1 + quantidade2 + quantidade3 + quantidade4 + quantidade5) + " O preco do produto foi: " + precoProduto5.ToString("F1", CultureInfo.InvariantCulture) + "O valor total é R$ " + v5.ToString("F2", CultureInfo.InvariantCulture));
+                Console.WriteLine("Os seus produtos são: "  + nomeProduto1 +(", ") + nomeProduto2+ (", ") + nomeProduto3 +(", ") + nomeProduto4 + (", ") + nomeProduto5 + " A quantidade foi: " + (quantidade1 + quantidade2 + quantidade3 + quantidade4 + quantidade5) + " O preco do produto foi: " + precoProduto5.ToString("F1", CultureInfo.InvariantCulture) + "O valor total é R$ " + v5.ToString("F2", CultureInfo.InvariantCulture));
                 Console.WriteLine("Confira o seu troco R$ " + troco5.ToString("F2", CultureInfo.InvariantCulture));
                 Console.ReadLine();
             }
@@ -134,7 +134,7 @@ namespace Mercado2
                 dinheiro6 = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                 v6 = valorTotal1 + valorTotal2 + valorTotal3 + valorTotal4 + valorTotal5 + valorTotal6;
                 troco6 = dinheiro6 - v6;
-                Console.WriteLine("O seu produto é: " + nomeProduto1 + nomeProduto2 + nomeProduto3 + nomeProduto4 + nomeProduto5 + nomeProduto6 + " A quantidade foi: " + (quantidade1 + quantidade2 + quantidade3 + quantidade4 + quantidade5 + quantidade6) + " O preco do produto foi: " + precoProduto6.ToString("F1", CultureInfo.InvariantCulture) + "O valor total é R$ " + v6.ToString("F2", CultureInfo.InvariantCulture));
+                Console.WriteLine("Os seus produtos são: " + nomeProduto1 + (", ") + nomeProduto2 + (", ") + nomeProduto3 + (", ") + nomeProduto4 + (", ") + nomeProduto5 + (", ") + nomeProduto6 +  " A quantidade foi: " + (quantidade1 + quantidade2 + quantidade3 + quantidade4 + quantidade5 + quantidade6) + " O preco do produto foi: " + precoProduto6.ToString("F1", CultureInfo.InvariantCulture) + "O valor total é R$ " + v6.ToString("F2", CultureInfo.InvariantCulture));
                 Console.WriteLine("Confira o seu troco R$ " + troco6.ToString("F2", CultureInfo.InvariantCulture));
                 Console.ReadLine();
             }
@@ -151,7 +151,7 @@ namespace Mercado2
             dinheiro7 = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             v7 = valorTotal1 + valorTotal2 + valorTotal3 + valorTotal4 + valorTotal5 + valorTotal6 + valorTotal7;
             troco7 = dinheiro7 - v7;
-            Console.WriteLine("O seu produto é: " + nomeProduto1 + nomeProduto2 + nomeProduto3 + nomeProduto4 + nomeProduto5 + nomeProduto6 + nomeProduto7 + " A quantidade foi: " + (quantidade1 + quantidade2 + quantidade3 + quantidade4 + quantidade5 + quantidade6 + quantidade7) + " O preco do produto foi: " + precoProduto7.ToString("F1", CultureInfo.InvariantCulture) + "O valor total é R$ " + v7.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("O seu produto é: " + nomeProduto1 + (", ") + nomeProduto2 + (", ")+ nomeProduto3 + (", ") + nomeProduto4 + (", ") + nomeProduto5 + (", ") + nomeProduto6+ (", ") + nomeProduto7 + (", ") + " A quantidade foi: " + (quantidade1 + quantidade2 + quantidade3 + quantidade4 + quantidade5 + quantidade6 + quantidade7) + " O preco do produto foi: " + precoProduto7.ToString("F1", CultureInfo.InvariantCulture) + "O valor total é R$ " + v7.ToString("F2", CultureInfo.InvariantCulture));
             Console.WriteLine("Confira o seu troco R$ " + troco7.ToString("F2", CultureInfo.InvariantCulture));
             Console.ReadLine();
             
