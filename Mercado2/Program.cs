@@ -9,7 +9,7 @@ namespace Mercado2
         {
             int quantidade1, quantidade2, quantidade3, quantidade4, quantidade5, quantidade6, quantidade7;
             float precoProduto1, precoProduto2, precoProduto3, precoProduto4, precoProduto5, precoProduto6, precoProduto7, valorTotal1, valorTotal2, valorTotal3, valorTotal4, valorTotal5, valorTotal6, valorTotal7, troco1, troco2,
-                    troco3, troco4, troco5, troco6, troco7, dinheiro1, dinheiro2, dinheiro3, dinheiro4, dinheiro5, dinheiro6, dinheiro7, v2, v3, v4, v5, v6, v7;
+                    troco3, troco4, troco5, troco6, troco7, dinheiro1, dinheiro2, dinheiro3, dinheiro4, dinheiro5, dinheiro6, dinheiro7, v2, v3, v4, v5, v6, v7, r2, r3, r4, r5, r6, r7;
             string nomeProduto1, nomeProduto2, nomeProduto3, nomeProduto4, nomeProduto5, nomeProduto6, nomeProduto7;
             char S = 's';
 
@@ -22,6 +22,7 @@ namespace Mercado2
             quantidade1 = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.WriteLine("Todos os produtos já foram registrados? Digite s para sim e n para não " );
             valorTotal1 = quantidade1 * precoProduto1;
+            Console.WriteLine("O valor da sua compra está dando R$ " + valorTotal1);
             S = char.Parse(Console.ReadLine());
             while (S == 's')
             {
@@ -42,6 +43,8 @@ namespace Mercado2
             quantidade2 = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.WriteLine("Todos os produtos já foram registrados? Digite s para sim e n para não ");
             valorTotal2 = quantidade2 * precoProduto2;
+            r2 = (valorTotal1 + valorTotal2);
+            Console.WriteLine("O valor da sua compra está dando R$ " + r2.ToString("F2", CultureInfo.InvariantCulture));
             S = char.Parse(Console.ReadLine());
             while (S == 's')
             {
@@ -63,6 +66,8 @@ namespace Mercado2
             quantidade3 = int.Parse(Console.ReadLine());
             Console.WriteLine("Todos os produtos já foram registrados? Digite s para sim e n para não ");
             valorTotal3 = quantidade3 * precoProduto3;
+            r3 = (valorTotal1 + valorTotal2 + valorTotal3);
+            Console.WriteLine("O valor da sua compra está dando R$ " + r3.ToString("F2", CultureInfo.InvariantCulture));
             S = char.Parse(Console.ReadLine());
             while (S == 's')
             {
@@ -84,6 +89,8 @@ namespace Mercado2
             quantidade4 = int.Parse(Console.ReadLine());
             Console.WriteLine("Todos os produtos já foram registrados? Digite s para sim e n para não ");
             valorTotal4 = quantidade4 * precoProduto4;
+            r4 = (valorTotal1 + valorTotal2 + valorTotal3 + valorTotal4);
+            Console.WriteLine("O valor da sua compra está dando R$ " + r4.ToString("F2", CultureInfo.InvariantCulture));
             S = char.Parse(Console.ReadLine());
             while (S == 's')
             {
@@ -105,6 +112,8 @@ namespace Mercado2
             quantidade5 = int.Parse(Console.ReadLine());
             Console.WriteLine("Todos os produtos já foram registrados? Digite s para sim e n para não ");
             valorTotal5 = quantidade5 * precoProduto5;
+            r5 = (valorTotal1 + valorTotal2 + valorTotal3 + valorTotal4 + valorTotal5);
+            Console.WriteLine("O valor da sua compra está dando R$ " + r5.ToString("F2", CultureInfo.InvariantCulture));
             S = char.Parse(Console.ReadLine());
             while (S == 's')
             {
@@ -126,6 +135,8 @@ namespace Mercado2
             quantidade6 = int.Parse(Console.ReadLine());
             Console.WriteLine("Todos os produtos já foram registrados? Digite s para sim e n para não ");
             valorTotal6 = quantidade6 * precoProduto6;
+            r6 = (valorTotal1 + valorTotal2 + valorTotal3 + valorTotal4 + valorTotal5 + valorTotal6);
+            Console.WriteLine("O valor da sua compra está dando R$ " + r6.ToString("F2", CultureInfo.InvariantCulture));
             S = char.Parse(Console.ReadLine());
             while (S == 's')
             {
@@ -146,12 +157,13 @@ namespace Mercado2
             Console.WriteLine("Digite a quantidade do produto7");
             quantidade7 = int.Parse(Console.ReadLine());
             valorTotal7 = quantidade7 * precoProduto7;
-            valorTotal7 = quantidade7 * precoProduto7;
+            r7 = (valorTotal1 + valorTotal2 + valorTotal3 + valorTotal4 + valorTotal5 + valorTotal6 + valorTotal7);
+            Console.WriteLine("O valor da sua compra está dando R$ " + r7.ToString("F2", CultureInfo.InvariantCulture));
             Console.WriteLine("Digite a quantidade de dinheiro entregue pelo cliente!");
             dinheiro7 = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             v7 = valorTotal1 + valorTotal2 + valorTotal3 + valorTotal4 + valorTotal5 + valorTotal6 + valorTotal7;
             troco7 = dinheiro7 - v7;
-            Console.WriteLine("O seu produto é: " + nomeProduto1 + (", ") + nomeProduto2 + (", ")+ nomeProduto3 + (", ") + nomeProduto4 + (", ") + nomeProduto5 + (", ") + nomeProduto6+ (", ") + nomeProduto7 + (", ") + " A quantidade foi: " + (quantidade1 + quantidade2 + quantidade3 + quantidade4 + quantidade5 + quantidade6 + quantidade7) + " O preco do produto foi: " + precoProduto7.ToString("F1", CultureInfo.InvariantCulture) + "O valor total é R$ " + v7.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("O seu produto é: " + nomeProduto1 + (", ") + nomeProduto2 + (", ")+ nomeProduto3 + (", ") + nomeProduto4 + (", ") + nomeProduto5 + (", ") + nomeProduto6+ (", ") + nomeProduto7 + (", ") + " A quantidade foi: " + (quantidade1 + quantidade2 + quantidade3 + quantidade4 + quantidade5 + quantidade6 + quantidade7) + "O valor total é R$ " + v7.ToString("F2", CultureInfo.InvariantCulture));
             Console.WriteLine("Confira o seu troco R$ " + troco7.ToString("F2", CultureInfo.InvariantCulture));
             Console.ReadLine();
             
